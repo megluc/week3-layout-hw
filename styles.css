@@ -1,0 +1,91 @@
+/* Basic readable layout improvements */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Constrain content width */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header and nav */
+
+header {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* Spacing */
+
+h1,
+h2,
+h3 {
+  margin-top: 1.5rem;
+}
+
+p,
+ul {
+  margin-bottom: 1rem;
+}
+
+/* Teaser cards */
+
+.teaser {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #000;
+  padding: 1rem;
+}
+
+/* Form layout */
+
+form {
+  margin-top: 1rem;
+}
+
+label,
+input,
+button {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Focus visibility */
+
+a:focus-visible,
+input:focus-visible,
+button:focus-visible {
+  outline: 2px solid black;
+}
+
+/* Responsive behavior */
+
+@media (min-width: 700px) {
+  .teaser {
+    flex-direction: row;
+  }
+}
+
+
+
